@@ -1,0 +1,58 @@
+:root{
+  --accent1: #0ea5a4;
+  --accent2: #06b6d4;
+  --muted:#6b7280;
+  --card-radius: 14px;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+body{
+  background: linear-gradient(180deg,#f8fafc 0%, #ffffff 60%);
+  color:#0f172a;
+  -webkit-font-smoothing:antialiased;
+  margin:0;
+  padding:0;
+  font-family: inherit;
+}
+
+.container{padding-bottom:80px}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, rgba(6,182,212,0.12), rgba(14,165,164,0.06));
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.06);
+}
+
+.badge-accent{
+  background: linear-gradient(90deg,var(--accent1),var(--accent2));
+  color:white;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-weight:600;
+  font-size:0.8rem;
+}
+
+.hero-img{width:84px;height:84px;object-fit:cover}
+.hero-title{font-weight:700}
+.hero-sub{font-size:.92rem}
+
+/* Cards */
+.card-plant{border-radius: var(--card-radius);box-shadow: 0 6px 18px rgba(15,23,42,0.06);overflow:hidden;transition: transform .18s ease, box-shadow .18s ease}
+.card-plant:hover{ transform: translateY(-6px); box-shadow: 0 14px 30px rgba(2,6,23,0.08); }
+.plant-img{height:120px;object-fit:cover;width:100%;display:block}
+.plant-name{font-weight:700}
+.latin{font-style:italic;color:var(--muted);font-size:.92rem}
+.card-info{border-radius:12px}
+
+/* Floating action */
+.fab{position: fixed;right: 16px;bottom: 18px;z-index: 1080;border-radius: 999px;box-shadow: 0 10px 30px rgba(2,6,23,0.12)}
+
+/* Modal image */
+.modal-img{width:120px;height:90px;object-fit:cover;border-radius:8px}
+
+/* Responsive */
+@media (min-width: 768px){
+  .plant-img{height:140px}
+}

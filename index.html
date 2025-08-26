@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kebun Dasawisma — Info & Tanaman</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container py-3">
+
+    <!-- HERO -->
+    <div class="hero p-3 mb-3">
+      <div class="d-flex align-items-start gap-3">
+        <img src="https://placehold.co/140x140?text=Kebun" alt="kebun" class="rounded-3 hero-img">
+        <div class="flex-grow-1">
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <div class="badge-accent mb-2">Kebun Dasawisma</div>
+              <h1 class="h5 mb-1 hero-title">Kebun Bersama — Jorong Bukiak Sariak</h1>
+              <p class="mb-0 text-muted hero-sub">Sumber pangan lokal & edukasi keluarga — info tanaman, cara tanam, dan catatan panen.</p>
+            </div>
+            <div class="text-end">
+              <a href="#info" class="btn btn-sm btn-outline-dark" title="Info Dasawisma"><i class="bi bi-info-circle"></i></a>
+            </div>
+          </div>
+
+          <div class="mt-3 d-flex gap-2">
+            <a href="#plants" class="btn btn-sm btn-primary btn-cta">Lihat Tanaman</a>
+            <a href="https://maps.app.goo.gl/Z95NyxnFBQXhjV4S6" target="_blank" class="btn btn-sm btn-outline-secondary">Lokasi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div id="info" class="mb-3">
+      <div class="card p-3 card-info">
+        <h2 class="h6 mb-2">Apa itu Dasawisma?</h2>
+        <p class="text-muted small mb-2">Dasawisma adalah kelompok masyarakat yang terdiri dari sekitar sepuluh kepala keluarga yang bertetangga dan menjadi bagian dari Gerakan Pemberdayaan dan Kesejahteraan Keluarga (PKK) di Indonesia. Kelompok ini berperan sebagai wadah pemberdayaan warga di tingkat paling kecil, biasanya di lingkungan RT atau dusun, untuk mendukung berbagai program sosial, kesehatan, pendidikan, ekonomi, dan pelestarian lingkungan. Melalui kegiatan seperti pendataan keluarga, penyuluhan gizi dan kesehatan, kerja bakti, pengelolaan kebun gizi, hingga pelatihan keterampilan, dasawisma menjadi motor penggerak partisipasi masyarakat dalam membangun lingkungan yang sehat, harmonis, dan produktif. Keberadaan dasawisma tidak hanya memperkuat rasa kebersamaan antarwarga, tetapi juga mendukung terciptanya kawasan yang tertata dan menarik, termasuk dalam pengembangan potensi wisata berbasis komunitas.</p>
+
+        <div class="accordion" id="accDasawisma">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="accOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Tujuan Kebun Dasawisma</button>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accDasawisma">
+              <div class="accordion-body small">      
+                Tujuan kebun dasawisma adalah untuk memanfaatkan lahan pekarangan atau lahan kosong di sekitar lingkungan sebagai sumber pangan sehat, bergizi, dan berkelanjutan bagi anggota kelompok. Kebun ini berfungsi menyediakan sayuran, buah, atau tanaman obat keluarga yang dapat memenuhi kebutuhan sehari-hari sekaligus menghemat pengeluaran rumah tangga. Selain itu, kebun dasawisma juga menjadi sarana edukasi bagi warga mengenai cara bercocok tanam yang baik, menjaga kelestarian lingkungan, dan meningkatkan ketahanan pangan keluarga. Dalam konteks wisata berbasis komunitas, kebun dasawisma dapat menjadi daya tarik tambahan bagi pengunjung, sekaligus menunjukkan kearifan lokal dan semangat gotong royong masyarakat setempat.
+
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="accTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Aturan Singkat Perawatan</button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accDasawisma">
+              <div class="accordion-body small">
+                Perawatan kebun dasawisma dilakukan secara bergiliran oleh anggota kelompok untuk memastikan tanaman tumbuh sehat dan produktif. Penyiraman dilakukan setiap pagi atau sore hari sesuai jadwal yang telah disepakati, disertai penyiangan gulma minimal seminggu sekali agar tanaman tidak terganggu rumput liar. Pemupukan menggunakan pupuk organik atau kompos diberikan setiap dua hingga empat minggu untuk menjaga kesuburan tanah, sementara pengendalian hama dilakukan secara alami dengan memeriksa tanaman secara berkala. Hasil panen dipetik pada waktunya dan dimanfaatkan bersama, baik untuk memenuhi kebutuhan pangan anggota maupun untuk mendukung kegiatan kelompok, sehingga kebun tetap terawat sekaligus menjadi sumber manfaat bagi seluruh warga.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="mb-3">
+      <div class="input-group">
+        <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+        <input id="searchInput" type="search" class="form-control" placeholder="Cari tanaman (contoh: Jahe, Kunyit)" aria-label="Cari tanaman">
+      </div>
+    </div>
+
+    <!-- PLANT GRID -->
+    <div id="plants" class="row g-3">
+      <!-- Card contoh, duplikat untuk tiap tanaman -->
+      <!-- Jahe -->
+      <div class="col-6 col-md-4 plant-col">
+        <div class="card card-plant">
+          <img class="plant-img" src="img/jahe.jpeg" alt="Jahe">
+          <div class="p-2">
+            <div class="d-flex align-items-start justify-content-between">
+              <div>
+                <div class="plant-name">Jahe</div>
+                <div class="latin">Zingiber officinale</div>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalJahe">Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kunyit -->
+      <div class="col-6 col-md-4 plant-col">
+        <div class="card card-plant">
+          <img class="plant-img" src="img/kunyit.jpeg" alt="Kunyit">
+          <div class="p-2">
+            <div class="d-flex align-items-start justify-content-between">
+              <div>
+                <div class="plant-name">Kunyit</div>
+                <div class="latin">Curcuma longa</div>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalKunyit">Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lengkuas -->
+      <div class="col-6 col-md-4 plant-col">
+        <div class="card card-plant">
+          <img class="plant-img" src="img/lengkuas.jpeg" alt="Lengkuas">
+          <div class="p-2">
+            <div class="d-flex align-items-start justify-content-between">
+              <div>
+                <div class="plant-name">Lengkuas</div>
+                <div class="latin">Alpinia galanga</div>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalLengkuas">Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kencur -->
+      <div class="col-6 col-md-4 plant-col">
+        <div class="card card-plant">
+          <img class="plant-img" src="img/kencur.jpeg" alt="Kencur">
+          <div class="p-2">
+            <div class="d-flex align-items-start justify-content-between">
+              <div>
+                <div class="plant-name">Kencur</div>
+                <div class="latin">Kaempferia galanga</div>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalKencur">Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kemangi  -->
+      <div class="col-6 col-md-4 plant-col">
+        <div class="card card-plant">
+          <img class="plant-img" src="img/kemangi.jpeg" alt="Kemangi">
+          <div class="p-2">
+            <div class="d-flex align-items-start justify-content-between">
+              <div>
+                <div class="plant-name">Kemangi</div>
+                <div class="latin">Ocimum x citriodorum</div>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalKemangi">Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<!-- Singkong -->
+      <div class="col-6 col-md-4 plant-col">
+        <div class="card card-plant">
+          <img class="plant-img" src="img/kunyit.jpeg" alt="Singkong">
+          <div class="p-2">
+            <div class="d-flex align-items-start justify-content-between">
+              <div>
+                <div class="plant-name">Singkong</div>
+                <div class="latin">Manihot esculenta</div>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalSingkong">Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+
+  <!-- FLOATING ACTION BUTTON -->
+  <div class="fab">
+    <div class="btn-group dropstart me-2">
+      <button class="btn btn-primary rounded-pill p-3" data-bs-toggle="dropdown" aria-expanded="false" title="Aksi cepat">
+        <i class="bi bi-qr-code-scan" style="font-size:1.15rem"></i>
+      </button>
+      <ul class="dropdown-menu p-2">
+        <li><a class="dropdown-item" href="#" id="printQr">Cetak QR Plot</a></li>
+        <li><a class="dropdown-item" href="https://forms.gle/yourformlink" target="_blank">Isi Laporan</a></li>
+        <li><a class="dropdown-item" href="#" id="sharePage">Bagikan</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MODALS -->
+  <div class="modal fade" id="modalJahe" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius:14px;">
+        <div class="modal-body p-3 d-flex gap-3">
+          <img src="img/jahe.jpeg" alt="Jahe" class="modal-img">
+          <div>
+            <h5 class="mb-1">Jahe <small class="latin">Zingiber officinale</small></h5>
+            <p class="small text-muted mb-1"><strong>Manfaat:</strong> Menghangatkan tubuh, obat masuk angin, bumbu masakan</p>
+            <p class="small text-muted mb-1"><strong>Ciri:</strong> Batang semu berwarna hijau, daun lanset, rimpang beraroma pedas hangat</p>
+            <p class="small text-muted"><strong>Cara tanam singkat:</strong> Tanam rimpang di tanah gembur, lembap, dan terkena sinar matahari cukup</p>
+            <div class="text-end mt-2">
+              <button class="btn btn-sm btn-primary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Other modals similar structure -->
+  <div class="modal fade" id="modalKunyit" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius:14px;">
+        <div class="modal-body p-3 d-flex gap-3">
+          <img src="img/kunyit.jpeg" alt="Kunyit" class="modal-img">
+          <div>
+            <h5 class="mb-1">Kunyit <small class="latin">Curcuma longa</small></h5>
+            <p class="small text-muted mb-1"><strong>Manfaat:</strong> Anti-inflamasi, pewarna alami, bahan jamu</p>
+            <p class="small text-muted mb-1"><strong>Ciri:</strong> Rimpang berwarna oranye, daun lebar hijau, bunga putih kekuningan</p>
+            <p class="small text-muted"><strong>Cara tanam singkat:</strong> Tanam rimpang di tanah gembur, siram rutin, panen setelah 8–10 bulan</p>
+            <div class="text-end mt-2">
+              <button class="btn btn-sm btn-primary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalLengkuas" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius:14px;">
+        <div class="modal-body p-3 d-flex gap-3">
+          <img src="img/lengkuas.jpeg" alt="Lengkuas" class="modal-img">
+          <div>
+            <h5 class="mb-1">Lengkuas <small class="latin">Alpinia galanga</small></h5>
+            <p class="small text-muted mb-1"><strong>Manfaat:</strong> Bumbu masakan, obat pegal, anti bakteri</p>
+            <p class="small text-muted mb-1"><strong>Ciri:</strong> Rimpang besar berwarna coklat kemerahan, daun panjang, batang tegak</p>
+            <p class="small text-muted"><strong>Cara tanam singkat:</strong> Tanam rimpang dengan jarak antar tanaman ±50 cm, butuh sinar matahari penuh</p>
+            <div class="text-end mt-2">
+              <button class="btn btn-sm btn-primary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalKencur" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius:14px;">
+        <div class="modal-body p-3 d-flex gap-3">
+          <img src="img/kencur.jpeg" alt="Kencur" class="modal-img">
+          <div>
+            <h5 class="mb-1">Kencur <small class="latin">Kaempferia galanga</small></h5>
+            <p class="small text-muted mb-1"><strong>Manfaat:</strong> Bahan jamu, obat batuk, penambah stamina</p>
+            <p class="small text-muted mb-1"><strong>Ciri:</strong> Daun bulat lebar dekat tanah, rimpang kecil beraroma khas</p>
+            <p class="small text-muted"><strong>Cara tanam singkat:</strong> Tanam rimpang di tanah lembap, tidak tergenang, cocok di area teduh</p>
+            <div class="text-end mt-2">
+              <button class="btn btn-sm btn-primary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalKemangi" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius:14px;">
+        <div class="modal-body p-3 d-flex gap-3">
+          <img src="img/kemangi.jpeg" alt="Kemangi" class="modal-img">
+          <div>
+            <h5 class="mb-1">Kemangi <small class="latin">Ocimum x citriodorum</small></h5>
+            <p class="small text-muted mb-1"><strong>Manfaat:</strong> Lalapan, penambah aroma, antioksidan</p>
+            <p class="small text-muted mb-1"><strong>Ciri:</strong> Batang hijau keunguan, daun kecil harum, bunga putih keunguan</p>
+            <p class="small text-muted"><strong>Cara tanam singkat:</strong>Tanam dari biji, siram rutin, pangkas pucuk untuk merangsang pertumbuhan.</p>
+            <div class="text-end mt-2">
+              <button class="btn btn-sm btn-primary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
